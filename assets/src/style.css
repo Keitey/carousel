@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    --background: rgb(241, 236, 236);
+    --text: black;
+}
+
+html[dark]{
+    background-color: rgb(241, 236, 236);
+}
+
+input{
+    display: none;
+}
+
+main{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.button{
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    top:5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1%;
+    margin-left: 3%;
+    margin-top: 4%;
+}
+
+.slideshow{
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.showSlide{
+    display: flex;
+}
+
+.button{  
+    position: relative;  
+    transition: 0.1s ease-in;
+}  
+#next{  
+    position: absolute;  
+    background-color: rgb(100, 96, 96);  
+    opacity: 0.8;  
+    top: 40%;  
+    right: 17%;  
+    width: 5%;  
+    height: 10%;  
+    z-index: 5;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 19px;
+    border:none;
+}  
+
+#prev{
+    position: absolute;  
+    background-color: rgb(100, 96, 96);  
+    opacity: 0.8;  
+    top: 40%;  
+    left: 19%;  
+    width: 5%;  
+    height: 10%;  
+    z-index: 5; 
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 19px;
+    border:none;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.dark-mode{
+    background: #000;
+}
+
+#mode-selector{
+    border-radius: 19px;
+    background-color: rgb(100, 96, 96);  
+    color: #fff;
+    border:none;
+    padding: 13px;
+    font-size: 1rem;
+    font-weight: bold;
+}
